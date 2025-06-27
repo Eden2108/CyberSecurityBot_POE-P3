@@ -35,7 +35,7 @@ namespace CyberSecurityBot
         private Dictionary<string, List<string>> keywordResponses = new();          // Bot replies based on keywords
         private List<QuizQuestion> quizQuestions = new();       // List of quiz questions
         private Random rnd = new Random();        // Used for randomizing responses and questions
-        private bool awaitingReminderConfirmation = false;       // Tracks if user is being asked to set a reminder
+        private bool awaitingReminderConfirmation = false;       // Tracks if the user is being asked to set a reminder
         private string lastTopic = "";       // Last topic mentioned by the user (for reminders)
 
 
@@ -262,7 +262,7 @@ namespace CyberSecurityBot
                 return "Take a deep breath. Cybersecurity can be tricky, but I’ll help.";
 
             if (lower.Contains("thanks") || lower.Contains("great"))
-                return $"You're welcome!, {userName}!";
+                return $"You're welcome! {userName}!";
 
 
             // Keyword matches
